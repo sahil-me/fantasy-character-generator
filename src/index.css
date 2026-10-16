@@ -24,58 +24,130 @@
   font-family: 'Cinzel', serif;
 }
 
-/* Workbench wood, enchanted library and parchment textures */
+/* Warm antique workbench with subtle alchemical gold */
 .workbench-bg {
-  background-color: #08060e;
-  background-image: 
-    /* Moonlight beam from celestial window */
-    radial-gradient(ellipse at 85% 5%, rgba(165, 180, 252, 0.16) 0%, rgba(99, 102, 241, 0.05) 45%, transparent 70%),
-    /* Cozy warm lantern glow on the workbench */
-    radial-gradient(circle at 12% 80%, rgba(245, 158, 11, 0.14) 0%, rgba(180, 83, 9, 0.06) 35%, transparent 60%),
-    radial-gradient(circle at 88% 85%, rgba(217, 119, 6, 0.12) 0%, rgba(146, 64, 14, 0.05) 35%, transparent 60%),
-    /* Alchemist desk central focus */
-    radial-gradient(ellipse at 50% 25%, rgba(212, 175, 55, 0.1) 0%, transparent 65%),
-    /* Subtle starry library archive wood grain */
-    repeating-linear-gradient(45deg, rgba(16, 12, 24, 0.5) 0px, rgba(16, 12, 24, 0.5) 2px, transparent 2px, transparent 10px);
+  background-color: #0d0a07;
+  background-image:
+    /* Subtle golden moonlight */
+    radial-gradient(
+      ellipse at 85% 5%,
+      rgba(212, 175, 55, 0.10) 0%,
+      rgba(146, 64, 14, 0.04) 45%,
+      transparent 70%
+    ),
+    /* Warm lantern glow */
+    radial-gradient(
+      circle at 12% 80%,
+      rgba(245, 158, 11, 0.14) 0%,
+      rgba(180, 83, 9, 0.06) 35%,
+      transparent 60%
+    ),
+    radial-gradient(
+      circle at 88% 85%,
+      rgba(217, 119, 6, 0.12) 0%,
+      rgba(146, 64, 14, 0.05) 35%,
+      transparent 60%
+    ),
+    /* Alchemical gold illumination */
+    radial-gradient(
+      ellipse at 50% 25%,
+      rgba(212, 175, 55, 0.08) 0%,
+      transparent 65%
+    ),
+    /* Subtle antique wood grain */
+    repeating-linear-gradient(
+      45deg,
+      rgba(24, 16, 10, 0.5) 0px,
+      rgba(24, 16, 10, 0.5) 2px,
+      transparent 2px,
+      transparent 10px
+    );
 }
 
+/* Warm bronze parchment panels */
 .parchment-panel {
-  background-color: #120e1a;
-  background-image: 
-    radial-gradient(circle at 50% 0%, rgba(245, 208, 98, 0.1) 0%, transparent 75%),
-    radial-gradient(circle at 85% 10%, rgba(165, 180, 252, 0.08) 0%, transparent 60%),
-    linear-gradient(180deg, #181224 0%, #0f0b18 100%);
+  background-color: #17100b;
+  background-image:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(245, 208, 98, 0.08) 0%,
+      transparent 75%
+    ),
+    radial-gradient(
+      circle at 85% 10%,
+      rgba(217, 119, 6, 0.04) 0%,
+      transparent 60%
+    ),
+    linear-gradient(
+      180deg,
+      #21170f 0%,
+      #100b08 100%
+    );
 }
 
+/* Dark antique inset panels */
 .parchment-inset {
-  background-color: #161122;
-  background-image: 
-    radial-gradient(circle at 50% 50%, rgba(212, 175, 55, 0.06) 0%, transparent 90%),
-    repeating-linear-gradient(0deg, rgba(0,0,0,0.2) 0px, rgba(0,0,0,0.2) 1px, transparent 1px, transparent 4px);
+  background-color: #15100b;
+  background-image:
+    radial-gradient(
+      circle at 50% 50%,
+      rgba(212, 175, 55, 0.06) 0%,
+      transparent 90%
+    ),
+    repeating-linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0px,
+      rgba(0, 0, 0, 0.2) 1px,
+      transparent 1px,
+      transparent 4px
+    );
 }
 
-/* Antique metallic gradients */
+/* Antique metallic gold gradients */
 .gold-text-gradient {
-  background: linear-gradient(135deg, #fff7db 0%, #f3cf65 40%, #c49420 80%, #996e0a 100%);
+  background: linear-gradient(
+    135deg,
+    #fff7db 0%,
+    #f3cf65 40%,
+    #c49420 80%,
+    #996e0a 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .bronze-text-gradient {
-  background: linear-gradient(135deg, #fce7cf 0%, #df994a 60%, #9c551c 100%);
+  background: linear-gradient(
+    135deg,
+    #fce7cf 0%,
+    #df994a 60%,
+    #9c551c 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 /* Anime Portrait Frame & Ambient Animations */
 @keyframes alchemyPulse {
-  0%, 100% { opacity: 0.7; transform: scale(1); }
-  50% { opacity: 1; transform: scale(1.02); }
+  0%, 100% {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.02);
+  }
 }
 
 @keyframes floatGentle {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-3px); }
+  0%, 100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-3px);
+  }
 }
 
 .alchemy-glow {
