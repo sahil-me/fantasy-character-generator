@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <radialGradient id="mage2-bg" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#ff7a00" stop-opacity="0.85"/>
+      <stop offset="35%" stop-color="#b91c1c" stop-opacity="0.5"/>
+      <stop offset="75%" stop-color="#1f0a0a" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#0a0303"/>
+    </radialGradient>
+    <linearGradient id="mage2-hair" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fed7aa"/>
+      <stop offset="30%" stop-color="#fb923c"/>
+      <stop offset="70%" stop-color="#dc2626"/>
+      <stop offset="100%" stop-color="#7f1d1d"/>
+    </linearGradient>
+    <linearGradient id="mage2-robe" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#450a0a"/>
+      <stop offset="50%" stop-color="#1c1917"/>
+      <stop offset="100%" stop-color="#0c0a09"/>
+    </linearGradient>
+    <linearGradient id="mage2-gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+    <linearGradient id="mage2-skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff7ed"/>
+      <stop offset="70%" stop-color="#fed7aa"/>
+      <stop offset="100%" stop-color="#fdba74"/>
+    </linearGradient>
+    <radialGradient id="mage2-eye" cx="45%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="35%" stop-color="#f97316"/>
+      <stop offset="70%" stop-color="#b91c1c"/>
+      <stop offset="100%" stop-color="#450a0a"/>
+    </radialGradient>
+    <filter id="pyro-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <rect width="500" height="500" fill="url(#mage2-bg)"/>
+
+  <!-- Solar Chrono Clockwork Rings -->
+  <g opacity="0.4" stroke="#fdba74" stroke-width="1.6" fill="none">
+    <circle cx="250" cy="210" r="175"/>
+    <circle cx="250" cy="210" r="145" stroke-dasharray="10,6"/>
+    <circle cx="250" cy="210" r="120"/>
+    <polygon points="250,65 375,280 125,280"/>
+  </g>
+
+  <!-- Ember Sparks Floating -->
+  <g fill="#fef08a" opacity="0.8" filter="url(#pyro-glow)">
+    <circle cx="160" cy="130" r="3"/>
+    <circle cx="340" cy="140" r="4"/>
+    <circle cx="120" cy="270" r="2.5"/>
+    <circle cx="380" cy="250" r="3.5"/>
+    <circle cx="270" cy="70" r="3"/>
+  </g>
+
+  <!-- Robe and Feathered Mantle -->
+  <path d="M 100 340 C 90 410 70 480 50 500 L 450 500 C 430 480 410 410 400 340 C 340 370 160 370 100 340 Z" fill="url(#mage2-robe)" stroke="#292524" stroke-width="3"/>
+  
+  <!-- Ember Velvet Trim -->
+  <path d="M 130 330 C 150 420 160 480 165 500 L 335 500 C 340 480 350 420 370 330 C 310 350 190 350 130 330 Z" fill="#7f1d1d" stroke="url(#mage2-gold)" stroke-width="2"/>
+
+  <!-- Golden Solar Brooch & Glowing Ruby Core -->
+  <circle cx="250" cy="330" r="14" fill="#dc2626" stroke="url(#mage2-gold)" stroke-width="3"/>
+  <circle cx="250" cy="330" r="7" fill="#fef08a" filter="url(#pyro-glow)"/>
+
+  <!-- Neck -->
+  <path d="M 230 235 L 230 275 C 242 283 258 283 270 275 L 270 235 Z" fill="#fed7aa" stroke="#ea580c" stroke-width="1.5"/>
+
+  <!-- Anime Face -->
+  <path d="M 198 175 C 198 238 224 268 250 268 C 276 268 302 238 302 175 C 302 125 198 125 198 175 Z" fill="url(#mage2-skin)" stroke="#ea580c" stroke-width="1.8"/>
+  <ellipse cx="220" cy="214" rx="9" ry="4" fill="#f87171" opacity="0.4"/>
+  <ellipse cx="280" cy="214" rx="9" ry="4" fill="#f87171" opacity="0.4"/>
+
+  <!-- Eyes (Fiery Gold-Amber) -->
+  <g id="mage2-left-eye">
+    <path d="M 212 195 C 220 188 232 188 240 193" stroke="#450a0a" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M 215 191 L 221 186" stroke="#450a0a" stroke-width="2" stroke-linecap="round"/>
+    <ellipse cx="226" cy="201" rx="9" ry="11" fill="url(#mage2-eye)"/>
+    <ellipse cx="226" cy="201" rx="4" ry="6" fill="#1c1917"/>
+    <circle cx="223" cy="197" r="3" fill="#ffffff"/>
+    <circle cx="229" cy="205" r="1.5" fill="#ffffff"/>
+    <path d="M 218 212 C 225 215 233 214 237 211" stroke="#c2410c" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    <path d="M 210 181 C 219 176 232 177 240 181" stroke="#9a3412" stroke-width="2" stroke-linecap="round" fill="none"/>
+  </g>
+  <g id="mage2-right-eye">
+    <path d="M 288 195 C 280 188 268 188 260 193" stroke="#450a0a" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M 285 191 L 279 186" stroke="#450a0a" stroke-width="2" stroke-linecap="round"/>
+    <ellipse cx="274" cy="201" rx="9" ry="11" fill="url(#mage2-eye)"/>
+    <ellipse cx="274" cy="201" rx="4" ry="6" fill="#1c1917"/>
+    <circle cx="271" cy="197" r="3" fill="#ffffff"/>
+    <circle cx="277" cy="205" r="1.5" fill="#ffffff"/>
+    <path d="M 282 212 C 275 215 267 214 263 211" stroke="#c2410c" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    <path d="M 290 181 C 281 176 268 177 260 181" stroke="#9a3412" stroke-width="2" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Nose & Confident Smirk -->
+  <path d="M 250 214 L 248 223 L 253 223" stroke="#ea580c" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+  <path d="M 242 241 C 248 245 254 245 259 241" stroke="#b91c1c" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+
+  <!-- Wild Crimson Anime Hair -->
+  <g id="mage2-hair-group">
+    <path d="M 160 170 C 130 220 120 340 140 400 C 160 330 180 250 190 180 Z" fill="url(#mage2-hair)"/>
+    <path d="M 340 170 C 370 220 380 340 360 400 C 340 330 320 250 310 180 Z" fill="url(#mage2-hair)"/>
+    <path d="M 180 150 C 170 95 220 70 250 70 C 280 70 330 95 320 150 C 310 115 280 100 250 100 C 220 100 190 115 180 150 Z" fill="url(#mage2-hair)"/>
+    
+    <path d="M 195 130 C 185 165 195 210 215 225 C 218 190 220 155 210 135 Z" fill="#fed7aa" stroke="#991b1b" stroke-width="1.2"/>
+    <path d="M 215 125 C 225 155 235 185 240 195 C 242 170 240 145 235 125 Z" fill="url(#mage2-hair)" stroke="#991b1b" stroke-width="1.2"/>
+    <path d="M 245 120 C 250 145 252 170 250 185 C 255 165 260 145 258 120 Z" fill="#fed7aa" stroke="#991b1b" stroke-width="1.2"/>
+    <path d="M 285 125 C 275 155 265 185 260 195 C 258 170 260 145 265 125 Z" fill="url(#mage2-hair)" stroke="#991b1b" stroke-width="1.2"/>
+    <path d="M 305 130 C 315 165 305 210 285 225 C 282 190 280 155 290 135 Z" fill="#fed7aa" stroke="#991b1b" stroke-width="1.2"/>
+    
+    <!-- Spiky Ahoge -->
+    <path d="M 248 80 C 235 45 260 35 272 40 C 260 50 252 65 250 80 Z" fill="#fed7aa" stroke="#991b1b" stroke-width="1.5"/>
+  </g>
+
+  <!-- Levitating Flame Grimoire -->
+  <g id="mage2-grimoire" filter="url(#pyro-glow)">
+    <rect x="330" y="270" width="55" height="40" rx="4" transform="rotate(-15 357 290)" fill="#7f1d1d" stroke="url(#mage2-gold)" stroke-width="2"/>
+    <line x1="335" y1="290" x2="380" y2="290" stroke="#fef08a" stroke-width="2" transform="rotate(-15 357 290)"/>
+    <circle cx="357" cy="290" r="5" fill="#fef08a"/>
+  </g>
+</svg>

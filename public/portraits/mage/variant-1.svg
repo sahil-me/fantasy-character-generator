@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <radialGradient id="mage1-bg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#4f46e5" stop-opacity="0.8"/>
+      <stop offset="35%" stop-color="#312e81" stop-opacity="0.5"/>
+      <stop offset="75%" stop-color="#110d24" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#070512"/>
+    </radialGradient>
+    <linearGradient id="mage1-hair" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e0e7ff"/>
+      <stop offset="30%" stop-color="#a5b4fc"/>
+      <stop offset="70%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#3730a3"/>
+    </linearGradient>
+    <linearGradient id="mage1-robe" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2e1065"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="mage1-gold-trim" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#eab308"/>
+      <stop offset="100%" stop-color="#854d0e"/>
+    </linearGradient>
+    <linearGradient id="mage1-skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff5f5"/>
+      <stop offset="70%" stop-color="#ffe4e6"/>
+      <stop offset="100%" stop-color="#fbcfe8"/>
+    </linearGradient>
+    <radialGradient id="mage1-eye" cx="45%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#fbcfe8"/>
+      <stop offset="35%" stop-color="#c084fc"/>
+      <stop offset="70%" stop-color="#7e22ce"/>
+      <stop offset="100%" stop-color="#3b0764"/>
+    </radialGradient>
+    <filter id="arcane-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Deep Astral Library Void -->
+  <rect width="500" height="500" fill="url(#mage1-bg)"/>
+
+  <!-- Starry Constellations & Arcane Glyph Rings -->
+  <g opacity="0.45" stroke="#a5b4fc" stroke-width="1.5" fill="none">
+    <circle cx="250" cy="220" r="170" stroke-dasharray="4,6"/>
+    <circle cx="250" cy="220" r="140"/>
+    <circle cx="250" cy="220" r="110" stroke-dasharray="8,4"/>
+    <polygon points="250,80 371,290 129,290" opacity="0.6"/>
+    <polygon points="250,360 371,150 129,150" opacity="0.6"/>
+  </g>
+
+  <!-- Floating Zodiac Motes & Runes -->
+  <g fill="#c7d2fe" opacity="0.75" filter="url(#arcane-glow)">
+    <circle cx="150" cy="120" r="3.5"/>
+    <circle cx="350" cy="110" r="4"/>
+    <circle cx="110" cy="240" r="2.5"/>
+    <circle cx="390" cy="260" r="3"/>
+    <circle cx="200" cy="70" r="2.5"/>
+    <circle cx="300" cy="65" r="3"/>
+  </g>
+
+  <!-- Archmage Robe Collar & Shoulders -->
+  <path d="M 100 340 C 90 410 70 480 50 500 L 450 500 C 430 480 410 410 400 340 C 340 370 160 370 100 340 Z" fill="url(#mage1-robe)" stroke="#1e1b4b" stroke-width="3"/>
+  
+  <!-- Velvet Mantle Inset & Gold Filigree -->
+  <path d="M 130 330 C 150 420 160 480 165 500 L 335 500 C 340 480 350 420 370 330 C 310 350 190 350 130 330 Z" fill="#3b0764" stroke="url(#mage1-gold-trim)" stroke-width="2"/>
+  <path d="M 180 310 C 220 340 280 340 320 310 L 340 360 C 290 390 210 390 160 360 Z" fill="#581c87" stroke="url(#mage1-gold-trim)" stroke-width="2.5"/>
+
+  <!-- High Wizard Standing Collar -->
+  <path d="M 175 280 C 150 240 160 190 170 180 C 180 230 190 270 205 285 Z" fill="#2e1065" stroke="url(#mage1-gold-trim)" stroke-width="1.8"/>
+  <path d="M 325 280 C 350 240 340 190 330 180 C 320 230 310 270 295 285 Z" fill="#2e1065" stroke="url(#mage1-gold-trim)" stroke-width="1.8"/>
+
+  <!-- Arcane Brooch Gemstone -->
+  <circle cx="250" cy="330" r="13" fill="#818cf8" stroke="url(#mage1-gold-trim)" stroke-width="3"/>
+  <circle cx="250" cy="330" r="6" fill="#ffffff" filter="url(#arcane-glow)"/>
+
+  <!-- Neck -->
+  <path d="M 230 235 L 230 275 C 242 283 258 283 270 275 L 270 235 Z" fill="#fbcfe8" stroke="#d8b4e2" stroke-width="1.5"/>
+
+  <!-- Anime Face -->
+  <path d="M 198 175 C 198 238 224 268 250 268 C 276 268 302 238 302 175 C 302 125 198 125 198 175 Z" fill="url(#mage1-skin)" stroke="#d8b4e2" stroke-width="1.8"/>
+  
+  <!-- Subtle Anime Blush -->
+  <ellipse cx="220" cy="214" rx="9" ry="4" fill="#f472b6" opacity="0.4"/>
+  <ellipse cx="280" cy="214" rx="9" ry="4" fill="#f472b6" opacity="0.4"/>
+
+  <!-- Anime Eyes (Mystic Violet) -->
+  <!-- Left Eye -->
+  <g id="mage-left-eye">
+    <path d="M 212 195 C 220 188 232 188 240 193" stroke="#2e1065" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M 215 191 L 221 186" stroke="#2e1065" stroke-width="2" stroke-linecap="round"/>
+    <ellipse cx="226" cy="201" rx="9" ry="11" fill="url(#mage1-eye)"/>
+    <ellipse cx="226" cy="201" rx="4" ry="6" fill="#1e1b4b"/>
+    <circle cx="223" cy="197" r="3" fill="#ffffff"/>
+    <circle cx="229" cy="205" r="1.5" fill="#ffffff"/>
+    <path d="M 218 212 C 225 215 233 214 237 211" stroke="#9333ea" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    <path d="M 210 181 C 219 176 232 177 240 181" stroke="#7e22ce" stroke-width="2" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Right Eye -->
+  <g id="mage-right-eye">
+    <path d="M 288 195 C 280 188 268 188 260 193" stroke="#2e1065" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M 285 191 L 279 186" stroke="#2e1065" stroke-width="2" stroke-linecap="round"/>
+    <ellipse cx="274" cy="201" rx="9" ry="11" fill="url(#mage1-eye)"/>
+    <ellipse cx="274" cy="201" rx="4" ry="6" fill="#1e1b4b"/>
+    <circle cx="271" cy="197" r="3" fill="#ffffff"/>
+    <circle cx="277" cy="205" r="1.5" fill="#ffffff"/>
+    <path d="M 282 212 C 275 215 267 214 263 211" stroke="#9333ea" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    <path d="M 290 181 C 281 176 268 177 260 181" stroke="#7e22ce" stroke-width="2" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Anime Nose & Serene Smile -->
+  <path d="M 250 214 L 248 223 L 253 223" stroke="#c084fc" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+  <path d="M 243 241 C 248 244 252 244 257 241" stroke="#db2777" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+
+  <!-- Anime Hair (Starlight Indigo with Cosmic Bangs) -->
+  <g id="mage-hair">
+    <!-- Cascading Back Locks -->
+    <path d="M 160 170 C 130 220 120 340 140 400 C 160 330 180 250 190 180 Z" fill="url(#mage1-hair)"/>
+    <path d="M 340 170 C 370 220 380 340 360 400 C 340 330 320 250 310 180 Z" fill="url(#mage1-hair)"/>
+
+    <!-- Hair Cap -->
+    <path d="M 180 150 C 170 95 220 70 250 70 C 280 70 330 95 320 150 C 310 115 280 100 250 100 C 220 100 190 115 180 150 Z" fill="url(#mage1-hair)"/>
+    
+    <!-- Anime Fringe Bangs -->
+    <path d="M 195 130 C 185 165 195 210 215 225 C 218 190 220 155 210 135 Z" fill="#e0e7ff" stroke="#4338ca" stroke-width="1.2"/>
+    <path d="M 215 125 C 225 155 235 185 240 195 C 242 170 240 145 235 125 Z" fill="url(#mage1-hair)" stroke="#4338ca" stroke-width="1.2"/>
+    <path d="M 245 120 C 250 145 252 170 250 185 C 255 165 260 145 258 120 Z" fill="#e0e7ff" stroke="#4338ca" stroke-width="1.2"/>
+    <path d="M 285 125 C 275 155 265 185 260 195 C 258 170 260 145 265 125 Z" fill="url(#mage1-hair)" stroke="#4338ca" stroke-width="1.2"/>
+    <path d="M 305 130 C 315 165 305 210 285 225 C 282 190 280 155 290 135 Z" fill="#e0e7ff" stroke="#4338ca" stroke-width="1.2"/>
+
+    <!-- Hair Starlight Gloss Line -->
+    <path d="M 200 120 C 230 108 270 108 300 120 C 280 113 220 113 200 120 Z" fill="#ffffff" opacity="0.8"/>
+  </g>
+
+  <!-- Starlight Orb & Arcane Wand -->
+  <g id="mage-wand" filter="url(#arcane-glow)">
+    <!-- Swirling Arcane Energy Ribbon -->
+    <path d="M 140 440 Q 180 320 220 370 T 360 300" fill="none" stroke="#818cf8" stroke-width="5" opacity="0.8" stroke-linecap="round"/>
+    <path d="M 140 440 Q 180 320 220 370 T 360 300" fill="none" stroke="#e0e7ff" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Floating Crystal Focus -->
+    <circle cx="360" cy="300" r="18" fill="#a5b4fc" opacity="0.85"/>
+    <circle cx="360" cy="300" r="9" fill="#ffffff"/>
+    <circle cx="360" cy="300" r="26" fill="none" stroke="#c7d2fe" stroke-width="1.5" stroke-dasharray="3,3"/>
+  </g>
+</svg>

@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <radialGradient id="paladin-bg1" cx="50%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#ffd56b" stop-opacity="0.8"/>
+      <stop offset="40%" stop-color="#d49e24" stop-opacity="0.4"/>
+      <stop offset="80%" stop-color="#2a1b08" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#120c04"/>
+    </radialGradient>
+    <linearGradient id="paladin-armor-gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff4cc"/>
+      <stop offset="35%" stop-color="#f5cc4b"/>
+      <stop offset="70%" stop-color="#b8860b"/>
+      <stop offset="100%" stop-color="#694304"/>
+    </linearGradient>
+    <linearGradient id="paladin-armor-silver" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#cdd8e6"/>
+      <stop offset="100%" stop-color="#708299"/>
+    </linearGradient>
+    <linearGradient id="paladin-hair-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff5b8"/>
+      <stop offset="40%" stop-color="#f3cf55"/>
+      <stop offset="85%" stop-color="#b8860b"/>
+      <stop offset="100%" stop-color="#734d00"/>
+    </linearGradient>
+    <linearGradient id="paladin-skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff3e6"/>
+      <stop offset="70%" stop-color="#fde0c2"/>
+      <stop offset="100%" stop-color="#f4c299"/>
+    </linearGradient>
+    <radialGradient id="paladin-eye" cx="45%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#fff275"/>
+      <stop offset="45%" stop-color="#e69500"/>
+      <stop offset="80%" stop-color="#804400"/>
+      <stop offset="100%" stop-color="#2b1400"/>
+    </radialGradient>
+    <filter id="holy-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background: Holy Cathedral Halo -->
+  <rect width="500" height="500" fill="url(#paladin-bg1)"/>
+  
+  <!-- Sacred Runic Mandala -->
+  <g opacity="0.35" stroke="#fce588" stroke-width="1.5" fill="none">
+    <circle cx="250" cy="220" r="170" stroke-dasharray="6,4"/>
+    <circle cx="250" cy="220" r="145"/>
+    <polygon points="250,75 375,290 125,290"/>
+    <polygon points="250,365 375,150 125,150"/>
+  </g>
+
+  <!-- Floating Light Motes -->
+  <g fill="#fff6cc" opacity="0.8">
+    <circle cx="160" cy="140" r="3" filter="url(#holy-glow)"/>
+    <circle cx="340" cy="120" r="4" filter="url(#holy-glow)"/>
+    <circle cx="120" cy="260" r="2.5"/>
+    <circle cx="380" cy="240" r="3"/>
+    <circle cx="210" cy="90" r="2"/>
+    <circle cx="290" cy="80" r="3.5" filter="url(#holy-glow)"/>
+  </g>
+
+  <!-- Cape / Mantle (Royal Crimson) -->
+  <path d="M 120 310 C 100 370 70 480 60 500 L 440 500 C 430 480 400 370 380 310 C 350 360 150 360 120 310 Z" fill="#80101b" stroke="#50070e" stroke-width="3"/>
+  <path d="M 140 330 C 110 400 95 490 90 500 L 150 500 C 160 430 180 380 190 350 Z" fill="#a81928" opacity="0.6"/>
+
+  <!-- Armor Shoulders & Gorget -->
+  <g id="armor-base">
+    <!-- Left Pauldron -->
+    <path d="M 90 360 C 90 310 140 280 185 290 C 160 340 140 400 130 450 C 105 420 90 390 90 360 Z" fill="url(#paladin-armor-gold)" stroke="#452a00" stroke-width="2.5"/>
+    <path d="M 105 340 C 115 315 145 295 175 300 C 155 340 140 380 135 410 C 120 385 110 365 105 340 Z" fill="#ffeaa3" opacity="0.5"/>
+    
+    <!-- Right Pauldron -->
+    <path d="M 410 360 C 410 310 360 280 315 290 C 340 340 360 400 370 450 C 395 420 410 390 410 360 Z" fill="url(#paladin-armor-gold)" stroke="#452a00" stroke-width="2.5"/>
+    <path d="M 395 340 C 385 315 355 295 325 300 C 345 340 360 380 365 410 C 380 385 390 365 395 340 Z" fill="#ffeaa3" opacity="0.5"/>
+
+    <!-- Chestplate / Cuirass (Silver & Gold Inlay) -->
+    <path d="M 180 300 C 210 290 290 290 320 300 C 340 360 330 450 320 500 L 180 500 C 170 450 160 360 180 300 Z" fill="url(#paladin-armor-silver)" stroke="#2f3b4a" stroke-width="3"/>
+    
+    <!-- Gold Breastplate filigree -->
+    <path d="M 250 320 L 275 365 L 250 420 L 225 365 Z" fill="url(#paladin-armor-gold)" stroke="#523200" stroke-width="2"/>
+    <circle cx="250" cy="365" r="9" fill="#ffef99" stroke="#996300" stroke-width="2"/>
+    <path d="M 215 315 C 235 325 265 325 285 315 C 280 350 265 375 250 385 C 235 375 220 350 215 315 Z" fill="none" stroke="url(#paladin-armor-gold)" stroke-width="3"/>
+    
+    <!-- Gorget Collar -->
+    <path d="M 210 270 C 230 285 270 285 290 270 L 305 305 C 275 315 225 315 195 305 Z" fill="url(#paladin-armor-gold)" stroke="#4a2e02" stroke-width="2"/>
+  </g>
+
+  <!-- Neck -->
+  <path d="M 225 240 L 225 280 C 238 288 262 288 275 280 L 275 240 Z" fill="#f0be95" stroke="#b07d56" stroke-width="1.5"/>
+
+  <!-- Anime Face Base -->
+  <path d="M 195 180 C 195 245 220 275 250 275 C 280 275 305 245 305 180 C 305 125 195 125 195 180 Z" fill="url(#paladin-skin)" stroke="#b8845d" stroke-width="1.8"/>
+  
+  <!-- Subtle Anime Blush -->
+  <ellipse cx="218" cy="216" rx="9" ry="4" fill="#ff8c8c" opacity="0.35"/>
+  <ellipse cx="282" cy="216" rx="9" ry="4" fill="#ff8c8c" opacity="0.35"/>
+
+  <!-- Anime Eyes -->
+  <!-- Left Eye -->
+  <g id="left-eye">
+    <!-- Upper Lash Line -->
+    <path d="M 210 198 C 218 191 230 191 238 196" stroke="#2c1508" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M 213 194 L 219 189" stroke="#2c1508" stroke-width="2" stroke-linecap="round"/>
+    <!-- Iris -->
+    <ellipse cx="225" cy="204" rx="9" ry="11" fill="url(#paladin-eye)"/>
+    <ellipse cx="225" cy="204" rx="4.5" ry="6.5" fill="#140800"/>
+    <!-- Catchlights -->
+    <circle cx="222" cy="200" r="3" fill="#ffffff"/>
+    <circle cx="228" cy="208" r="1.5" fill="#ffffff"/>
+    <!-- Lower Eyelid -->
+    <path d="M 216 215 C 223 218 231 217 235 214" stroke="#8a532d" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    <!-- Eyebrow -->
+    <path d="M 208 184 C 217 179 230 180 238 184" stroke="#99600a" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Right Eye -->
+  <g id="right-eye">
+    <!-- Upper Lash Line -->
+    <path d="M 290 198 C 282 191 270 191 262 196" stroke="#2c1508" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M 287 194 L 281 189" stroke="#2c1508" stroke-width="2" stroke-linecap="round"/>
+    <!-- Iris -->
+    <ellipse cx="275" cy="204" rx="9" ry="11" fill="url(#paladin-eye)"/>
+    <ellipse cx="275" cy="204" rx="4.5" ry="6.5" fill="#140800"/>
+    <!-- Catchlights -->
+    <circle cx="272" cy="200" r="3" fill="#ffffff"/>
+    <circle cx="278" cy="208" r="1.5" fill="#ffffff"/>
+    <!-- Lower Eyelid -->
+    <path d="M 284 215 C 277 218 269 217 265 214" stroke="#8a532d" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    <!-- Eyebrow -->
+    <path d="M 292 184 C 283 179 270 180 262 184" stroke="#99600a" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Anime Nose & Gentle Confident Smile -->
+  <path d="M 250 216 L 248 227 L 253 227" stroke="#b37247" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+  <path d="M 241 243 C 246 246 254 246 259 243" stroke="#9e4b31" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+  <path d="M 246 253 C 250 254 254 254 257 253" stroke="#cc8a72" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Anime Hair (Golden Paladin locks with Ahoge) -->
+  <g id="anime-hair">
+    <!-- Back Hair Fluff -->
+    <path d="M 175 180 C 160 210 165 250 175 270 C 185 240 190 200 190 180 Z" fill="#d99f18"/>
+    <path d="M 325 180 C 340 210 335 250 325 270 C 315 240 310 200 310 180 Z" fill="#d99f18"/>
+
+    <!-- Main Front Hair Clumps -->
+    <path d="M 180 160 C 170 110 220 85 250 85 C 280 85 330 110 320 160 C 315 130 280 115 250 115 C 220 115 185 130 180 160 Z" fill="url(#paladin-hair-gold)"/>
+    
+    <!-- Left Bangs -->
+    <path d="M 200 135 C 190 165 195 200 210 220 C 215 190 220 165 215 145 Z" fill="url(#paladin-hair-gold)" stroke="#805400" stroke-width="1.2"/>
+    <path d="M 220 130 C 225 160 230 185 235 195 C 238 175 240 150 235 130 Z" fill="url(#paladin-hair-gold)" stroke="#805400" stroke-width="1.2"/>
+    
+    <!-- Center Bangs -->
+    <path d="M 240 125 C 248 150 252 175 250 188 C 255 170 262 150 260 125 Z" fill="#ffeaa3" stroke="#805400" stroke-width="1.2"/>
+
+    <!-- Right Bangs -->
+    <path d="M 265 130 C 260 160 270 185 265 195 C 275 175 275 150 280 130 Z" fill="url(#paladin-hair-gold)" stroke="#805400" stroke-width="1.2"/>
+    <path d="M 300 135 C 310 165 305 200 290 220 C 285 190 280 165 285 145 Z" fill="url(#paladin-hair-gold)" stroke="#805400" stroke-width="1.2"/>
+
+    <!-- Paladin Signature Ahoge (Antenna hair strand) -->
+    <path d="M 250 90 C 245 50 265 40 275 45 C 265 55 255 65 253 90 Z" fill="#ffec94" stroke="#946300" stroke-width="1.5"/>
+
+    <!-- Hair Glint Highlights -->
+    <path d="M 205 130 C 230 118 270 118 295 130 C 280 123 225 123 205 130 Z" fill="#ffffff" opacity="0.75"/>
+  </g>
+
+  <!-- Holy Radiance Greatsword (Centerpiece Weapon) -->
+  <g id="holy-blade" filter="url(#holy-glow)">
+    <!-- Blade Flare Light Aura -->
+    <line x1="310" y1="480" x2="385" y2="290" stroke="#fff9d6" stroke-width="8" stroke-linecap="round"/>
+    <line x1="310" y1="480" x2="385" y2="290" stroke="#ffe066" stroke-width="14" opacity="0.4" stroke-linecap="round"/>
+    
+    <!-- Crossguard -->
+    <path d="M 355 315 L 415 340 L 405 355 L 345 330 Z" fill="url(#paladin-armor-gold)" stroke="#422900" stroke-width="1.5"/>
+    <circle cx="377" cy="335" r="5" fill="#ffffff" stroke="#c48f00" stroke-width="1.5"/>
+    
+    <!-- Starburst on Sword Tip -->
+    <polygon points="385,280 390,290 400,295 390,300 385,310 380,300 370,295 380,290" fill="#ffffff"/>
+  </g>
+</svg>

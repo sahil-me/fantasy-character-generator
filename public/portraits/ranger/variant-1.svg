@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <radialGradient id="ranger1-bg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#84cc16" stop-opacity="0.85"/>
+      <stop offset="35%" stop-color="#4d7c0f" stop-opacity="0.5"/>
+      <stop offset="75%" stop-color="#142e06" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#0a1803"/>
+    </radialGradient>
+    <linearGradient id="ranger1-hair" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#bef264"/>
+      <stop offset="30%" stop-color="#65a30d"/>
+      <stop offset="70%" stop-color="#365314"/>
+      <stop offset="100%" stop-color="#1a2e05"/>
+    </linearGradient>
+    <linearGradient id="ranger1-tunic" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3f6212"/>
+      <stop offset="50%" stop-color="#1a2e05"/>
+      <stop offset="100%" stop-color="#713f12"/>
+    </linearGradient>
+    <linearGradient id="ranger1-skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fefce8"/>
+      <stop offset="70%" stop-color="#fef08a"/>
+      <stop offset="100%" stop-color="#fde047"/>
+    </linearGradient>
+    <radialGradient id="ranger1-eye" cx="45%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#bef264"/>
+      <stop offset="40%" stop-color="#65a30d"/>
+      <stop offset="80%" stop-color="#365314"/>
+      <stop offset="100%" stop-color="#14532d"/>
+    </radialGradient>
+    <filter id="fey-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <rect width="500" height="500" fill="url(#ranger1-bg)"/>
+
+  <!-- Feywild Botanical Geometry -->
+  <g opacity="0.4" stroke="#bef264" stroke-width="1.8" fill="none">
+    <circle cx="250" cy="210" r="175"/>
+    <circle cx="250" cy="210" r="145" stroke-dasharray="8,6"/>
+    <circle cx="250" cy="210" r="115"/>
+  </g>
+
+  <!-- Luminous Floral / Spore Motes -->
+  <g fill="#d9f99d" opacity="0.8" filter="url(#fey-glow)">
+    <circle cx="150" cy="130" r="3.5"/>
+    <circle cx="350" cy="120" r="4"/>
+    <circle cx="110" cy="260" r="2.5"/>
+    <circle cx="390" cy="240" r="3"/>
+  </g>
+
+  <!-- Leather & Leaf-weave Cloak -->
+  <path d="M 100 340 C 90 410 70 480 50 500 L 450 500 C 430 480 410 410 400 340 C 340 370 160 370 100 340 Z" fill="url(#ranger1-tunic)" stroke="#14532d" stroke-width="3"/>
+
+  <!-- Leaf Clasp & Vine Strap -->
+  <path d="M 150 320 C 180 340 320 340 350 320 L 330 360 C 290 380 210 380 170 360 Z" fill="#4d7c0f" stroke="#a3e635" stroke-width="1.5"/>
+  <circle cx="250" cy="350" r="10" fill="#a3e635" stroke="#365314" stroke-width="2"/>
+
+  <!-- Neck -->
+  <path d="M 225 235 L 225 275 C 238 283 262 283 275 275 L 275 235 Z" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5"/>
+
+  <!-- Anime Face -->
+  <path d="M 196 175 C 196 238 222 268 250 268 C 278 268 304 238 304 175 C 304 125 196 125 196 175 Z" fill="url(#ranger1-skin)" stroke="#ca8a04" stroke-width="1.8"/>
+  <ellipse cx="218" cy="214" rx="9" ry="4" fill="#84cc16" opacity="0.35"/>
+  <ellipse cx="282" cy="214" rx="9" ry="4" fill="#84cc16" opacity="0.35"/>
+
+  <!-- Eyes (Emerald Hunter Keen Vision) -->
+  <g id="ranger1-left-eye">
+    <path d="M 210 196 C 218 189 230 189 238 194" stroke="#14532d" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M 213 192 L 219 187" stroke="#14532d" stroke-width="2" stroke-linecap="round"/>
+    <ellipse cx="225" cy="202" rx="9" ry="11" fill="url(#ranger1-eye)"/>
+    <ellipse cx="225" cy="202" rx="4" ry="6" fill="#052e16"/>
+    <circle cx="222" cy="198" r="3" fill="#ffffff"/>
+    <circle cx="228" cy="206" r="1.5" fill="#ffffff"/>
+    <path d="M 216 213 C 223 216 231 215 235 212" stroke="#65a30d" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    <path d="M 208 181 C 217 175 230 176 238 181" stroke="#4d7c0f" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  </g>
+  <g id="ranger1-right-eye">
+    <path d="M 290 196 C 282 189 270 189 262 194" stroke="#14532d" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M 287 192 L 281 187" stroke="#14532d" stroke-width="2" stroke-linecap="round"/>
+    <ellipse cx="275" cy="202" rx="9" ry="11" fill="url(#ranger1-eye)"/>
+    <ellipse cx="275" cy="202" rx="4" ry="6" fill="#052e16"/>
+    <circle cx="272" cy="198" r="3" fill="#ffffff"/>
+    <circle cx="278" cy="206" r="1.5" fill="#ffffff"/>
+    <path d="M 284 213 C 277 216 269 215 265 212" stroke="#65a30d" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    <path d="M 292 181 C 283 175 270 176 262 181" stroke="#4d7c0f" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Nose & Attentive Gentle Smile -->
+  <path d="M 250 214 L 248 223 L 253 223" stroke="#ca8a04" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+  <path d="M 242 240 C 248 244 254 244 259 240" stroke="#15803d" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+
+  <!-- Forest Green Flowing Anime Hair with Elven Ears -->
+  <g id="ranger1-hair-group">
+    <!-- Elven Pointed Ears -->
+    <polygon points="196,190 155,175 194,205" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5"/>
+    <polygon points="304,190 345,175 306,205" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5"/>
+
+    <path d="M 160 170 C 130 210 135 290 150 340 C 165 280 175 230 185 180 Z" fill="url(#ranger1-hair)"/>
+    <path d="M 340 170 C 370 210 365 290 350 340 C 335 280 325 230 315 180 Z" fill="url(#ranger1-hair)"/>
+    <path d="M 180 150 C 170 95 220 70 250 70 C 280 70 330 95 320 150 C 310 115 280 100 250 100 C 220 100 190 115 180 150 Z" fill="url(#ranger1-hair)"/>
+
+    <path d="M 195 130 C 185 165 195 210 215 225 C 218 190 220 155 210 135 Z" fill="#d9f99d" stroke="#365314" stroke-width="1.2"/>
+    <path d="M 215 125 C 225 155 235 185 240 195 C 242 170 240 145 235 125 Z" fill="url(#ranger1-hair)" stroke="#365314" stroke-width="1.2"/>
+    <path d="M 245 120 C 250 145 252 170 250 185 C 255 165 260 145 258 120 Z" fill="#d9f99d" stroke="#365314" stroke-width="1.2"/>
+    <path d="M 285 125 C 275 155 265 185 260 195 C 258 170 260 145 265 125 Z" fill="url(#ranger1-hair)" stroke="#365314" stroke-width="1.2"/>
+    <path d="M 305 130 C 315 165 305 210 285 225 C 282 190 280 155 290 135 Z" fill="#d9f99d" stroke="#365314" stroke-width="1.2"/>
+  </g>
+
+  <!-- Spectral Fey Bow & Arrow Aura -->
+  <g id="ranger1-bow" filter="url(#fey-glow)">
+    <path d="M 330 480 Q 400 350 350 260" fill="none" stroke="#bef264" stroke-width="6" stroke-linecap="round"/>
+    <line x1="330" y1="480" x2="350" y2="260" stroke="#ecfccb" stroke-width="1.5"/>
+  </g>
+</svg>

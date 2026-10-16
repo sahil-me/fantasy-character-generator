@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <radialGradient id="paladin2-bg" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#fff8db" stop-opacity="0.9"/>
+      <stop offset="35%" stop-color="#f0cb62" stop-opacity="0.45"/>
+      <stop offset="75%" stop-color="#241a36" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#0e0a17"/>
+    </radialGradient>
+    <linearGradient id="paladin2-silver" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="40%" stop-color="#d4e1f5"/>
+      <stop offset="80%" stop-color="#8ba1be"/>
+      <stop offset="100%" stop-color="#4c5d75"/>
+    </linearGradient>
+    <linearGradient id="paladin2-hair-plat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="45%" stop-color="#f1f3f7"/>
+      <stop offset="85%" stop-color="#b6c2d4"/>
+      <stop offset="100%" stop-color="#808ea3"/>
+    </linearGradient>
+    <linearGradient id="paladin2-skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff5ec"/>
+      <stop offset="70%" stop-color="#fce2ce"/>
+      <stop offset="100%" stop-color="#f0be9e"/>
+    </linearGradient>
+    <radialGradient id="paladin2-eye" cx="45%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#bbf3ff"/>
+      <stop offset="40%" stop-color="#4db8ff"/>
+      <stop offset="80%" stop-color="#005db3"/>
+      <stop offset="100%" stop-color="#002147"/>
+    </radialGradient>
+    <filter id="holy-glow2" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="500" height="500" fill="url(#paladin2-bg)"/>
+  
+  <!-- Sacred Sun Crest Mandala -->
+  <g opacity="0.4" stroke="#ffe082" stroke-width="1.8" fill="none">
+    <circle cx="250" cy="210" r="175"/>
+    <circle cx="250" cy="210" r="150" stroke-dasharray="8,6"/>
+    <circle cx="250" cy="210" r="120"/>
+    <line x1="75" y1="210" x2="425" y2="210" stroke-dasharray="4,4"/>
+    <line x1="250" y1="35" x2="250" y2="385" stroke-dasharray="4,4"/>
+  </g>
+
+  <!-- Winged Valkyrie Crest / Tiara Background Wings -->
+  <g fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5" opacity="0.85">
+    <path d="M 170 160 C 130 130 110 80 125 50 C 145 90 170 120 185 140 Z"/>
+    <path d="M 330 160 C 370 130 390 80 375 50 C 355 90 330 120 315 140 Z"/>
+  </g>
+
+  <!-- Cape / Mantle (Deep Azure & Gold Trim) -->
+  <path d="M 120 310 C 95 380 65 480 50 500 L 450 500 C 435 480 405 380 380 310 Z" fill="#132342" stroke="#0b1426" stroke-width="3"/>
+  <path d="M 145 340 L 90 500 L 125 500 L 175 350 Z" fill="#f5cc4b" opacity="0.6"/>
+
+  <!-- Armor Base -->
+  <g id="armor-paladin-2">
+    <!-- Left Winged Pauldron -->
+    <path d="M 80 350 C 80 300 130 270 180 280 C 160 340 140 400 130 450 C 100 410 80 380 80 350 Z" fill="url(#paladin2-silver)" stroke="#334155" stroke-width="2.5"/>
+    <path d="M 95 330 C 120 295 160 290 175 295 L 140 380 Z" fill="#ffffff" opacity="0.5"/>
+
+    <!-- Right Pauldron with Gold Accents -->
+    <path d="M 420 350 C 420 300 370 270 320 280 C 340 340 360 400 370 450 C 400 410 420 380 420 350 Z" fill="url(#paladin2-silver)" stroke="#334155" stroke-width="2.5"/>
+    <path d="M 405 330 C 380 295 340 290 325 295 L 360 380 Z" fill="#ffffff" opacity="0.5"/>
+
+    <!-- Breastplate with Solar Cross Engraving -->
+    <path d="M 180 290 C 215 280 285 280 320 290 C 335 360 330 450 320 500 L 180 500 C 170 450 165 360 180 290 Z" fill="url(#paladin2-silver)" stroke="#1e293b" stroke-width="3"/>
+    
+    <!-- Azure Gem & Radiant Cross -->
+    <circle cx="250" cy="350" r="14" fill="#0284c7" stroke="#38bdf8" stroke-width="2"/>
+    <circle cx="250" cy="350" r="7" fill="#e0f2fe" filter="url(#holy-glow2)"/>
+    <line x1="250" y1="310" x2="250" y2="400" stroke="#facc15" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="215" y1="350" x2="285" y2="350" stroke="#facc15" stroke-width="3.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Neck -->
+  <path d="M 228 235 L 228 275 C 240 283 260 283 272 275 L 272 235 Z" fill="#f8be9e" stroke="#c08465" stroke-width="1.5"/>
+
+  <!-- Anime Face Base -->
+  <path d="M 196 175 C 196 238 222 268 250 268 C 278 268 304 238 304 175 C 304 125 196 125 196 175 Z" fill="url(#paladin2-skin)" stroke="#b8845d" stroke-width="1.8"/>
+  
+  <!-- Anime Eye Highlights & Blush -->
+  <ellipse cx="218" cy="214" rx="10" ry="4" fill="#fb7185" opacity="0.4"/>
+  <ellipse cx="282" cy="214" rx="10" ry="4" fill="#fb7185" opacity="0.4"/>
+
+  <!-- Left Eye -->
+  <g id="left-eye-2">
+    <path d="M 210 196 C 218 189 230 189 238 194" stroke="#1e293b" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M 213 192 L 219 187" stroke="#1e293b" stroke-width="2" stroke-linecap="round"/>
+    <ellipse cx="225" cy="202" rx="9" ry="11" fill="url(#paladin2-eye)"/>
+    <ellipse cx="225" cy="202" rx="4" ry="6" fill="#001833"/>
+    <circle cx="222" cy="198" r="3" fill="#ffffff"/>
+    <circle cx="228" cy="206" r="1.5" fill="#ffffff"/>
+    <path d="M 216 213 C 223 216 231 215 235 212" stroke="#64748b" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    <path d="M 208 182 C 217 177 230 178 238 182" stroke="#64748b" stroke-width="2" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Right Eye -->
+  <g id="right-eye-2">
+    <path d="M 290 196 C 282 189 270 189 262 194" stroke="#1e293b" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M 287 192 L 281 187" stroke="#1e293b" stroke-width="2" stroke-linecap="round"/>
+    <ellipse cx="275" cy="202" rx="9" ry="11" fill="url(#paladin2-eye)"/>
+    <ellipse cx="275" cy="202" rx="4" ry="6" fill="#001833"/>
+    <circle cx="272" cy="198" r="3" fill="#ffffff"/>
+    <circle cx="278" cy="206" r="1.5" fill="#ffffff"/>
+    <path d="M 284 213 C 277 216 269 215 265 212" stroke="#64748b" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    <path d="M 292 182 C 283 177 270 178 262 182" stroke="#64748b" stroke-width="2" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Anime Nose & Determined Smile -->
+  <path d="M 250 214 L 248 223 L 253 223" stroke="#b07d56" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+  <path d="M 242 240 C 247 243 253 243 258 240" stroke="#be123c" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+
+  <!-- Platinum Anime Hair with Twin-braid Framing -->
+  <g id="anime-hair-2">
+    <!-- Back Hair Flow -->
+    <path d="M 160 170 C 140 220 145 320 160 370 C 175 320 180 240 185 180 Z" fill="url(#paladin2-hair-plat)"/>
+    <path d="M 340 170 C 360 220 355 320 340 370 C 325 320 320 240 315 180 Z" fill="url(#paladin2-hair-plat)"/>
+
+    <!-- Main Front Hair Cap -->
+    <path d="M 180 150 C 170 100 220 75 250 75 C 280 75 330 100 320 150 C 310 120 280 105 250 105 C 220 105 190 120 180 150 Z" fill="url(#paladin2-hair-plat)"/>
+    
+    <!-- Flowing Bangs -->
+    <path d="M 195 130 C 190 165 200 210 215 225 C 218 195 218 160 210 140 Z" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+    <path d="M 215 125 C 225 155 235 185 240 195 C 242 175 240 150 235 125 Z" fill="url(#paladin2-hair-plat)" stroke="#94a3b8" stroke-width="1.2"/>
+    <path d="M 242 120 C 250 145 255 170 252 185 C 258 165 264 145 260 120 Z" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+    <path d="M 285 125 C 275 155 265 185 260 195 C 258 175 260 150 265 125 Z" fill="url(#paladin2-hair-plat)" stroke="#94a3b8" stroke-width="1.2"/>
+    <path d="M 305 130 C 310 165 300 210 285 225 C 282 195 282 160 290 140 Z" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+
+    <!-- Silver Tiara Crest -->
+    <path d="M 210 140 L 250 115 L 290 140 L 275 150 L 250 135 L 225 150 Z" fill="#facc15" stroke="#a16207" stroke-width="1.5"/>
+    <circle cx="250" cy="132" r="4" fill="#38bdf8"/>
+  </g>
+
+  <!-- Radiant Aegis Shield (Foreground Heroic Element) -->
+  <g id="radiant-shield" filter="url(#holy-glow2)">
+    <!-- Kite Shield Base -->
+    <path d="M 110 320 C 130 310 170 310 190 320 C 190 410 155 460 150 490 C 145 460 110 410 110 320 Z" fill="url(#paladin2-silver)" stroke="#0f172a" stroke-width="2.5"/>
+    <!-- Golden Shield Inlay -->
+    <path d="M 125 335 C 138 328 162 328 175 335 C 175 400 152 440 150 460 C 148 440 125 400 125 335 Z" fill="#facc15" opacity="0.6"/>
+    <circle cx="150" cy="380" r="10" fill="#ffffff" stroke="#ca8a04" stroke-width="2"/>
+    <polygon points="150,360 155,375 170,380 155,385 150,400 145,385 130,380 145,375" fill="#fef08a"/>
+  </g>
+</svg>
