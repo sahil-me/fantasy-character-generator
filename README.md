@@ -141,22 +141,30 @@ fantasy-character-generator/
 ├── public/
 │   └── portraits/
 │       ├── mage/
+│       ├── necromancer/
+│       ├── paladin/
+│       ├── ranger/
 │       ├── rogue/
 │       ├── warrior/
-│       ├── ranger/
-│       ├── paladin/
-│       └── necromancer/
+│       └── README.md
 │
 ├── src/
+│   ├── assets/
+│   │   └── images/
 │   ├── App.tsx
-│   └── ...
+│   ├── index.css
+│   └── main.tsx
 │
 ├── .env.example
 ├── .gitignore
-├── index.html
-├── package.json
-├── package-lock.json
+├── CODE_OF_CONDUCT.md
+├── CONTRIBUTING.md
+├── LICENSE
 ├── README.md
+├── SECURITY.md
+├── index.html
+├── metadata.json
+├── package.json
 ├── tsconfig.json
 └── vite.config.ts
 ```
@@ -166,21 +174,16 @@ fantasy-character-generator/
 
 ### Key Components
 
-- **`src/`** — Contains the main React application source code and supporting modules.
-- **`src/App.tsx`** — Contains the main application implementation and character-related interface logic.
-- **`public/portraits/`** — Contains locally stored character portrait assets organized by class.
-- **`public/portraits/mage/`** — Contains portrait assets for Mage characters.
-- **`public/portraits/rogue/`** — Contains portrait assets for Rogue characters.
-- **`public/portraits/warrior/`** — Contains portrait assets for Warrior characters.
-- **`public/portraits/ranger/`** — Contains portrait assets for Ranger characters.
-- **`public/portraits/paladin/`** — Contains portrait assets for Paladin characters.
-- **`public/portraits/necromancer/`** — Contains portrait assets for Necromancer characters.
-- **`package.json`** — Defines the project's npm scripts and dependencies.
-- **`package-lock.json`** — Records the resolved npm dependency tree.
-- **`vite.config.ts`** — Contains the Vite build and development-server configuration.
-- **`tsconfig.json`** — Contains TypeScript compiler configuration.
-- **`.gitignore`** — Excludes configured local, generated, and sensitive files from version control.
-- **`.env.example`** — Provides an example environment-variable file, where applicable.
+- **`public/portraits/`** — Contains character portraits organized by fantasy class.
+- **`src/`** — Contains the React application source code and supporting assets.
+- **`src/App.tsx`** — Implements the main application interface and character-generation logic.
+- **`src/main.tsx`** — Serves as the application entry point.
+- **`src/index.css`** — Defines application-wide styles.
+- **`package.json`** — Defines project dependencies and npm scripts.
+- **`vite.config.ts` and `tsconfig.json`** — Configure Vite and TypeScript.
+- **`.env.example` and `.gitignore`** — Support environment configuration and version-control exclusions.
+- **`CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, and `SECURITY.md`** — Provide contribution, community, and security guidelines.
+- **`README.md` and `LICENSE`** — Provide project documentation and licensing information.
 
 ---
 
