@@ -1,8 +1,8 @@
 # 🧙 Fantasy Character Generator ⚔️
 
+https://github.com/user-attachments/assets/653dc2f3-15b1-4313-9982-c6e6877f79dd
 
-
-> 🎮 Explore **Fantasy Character Generator** in action! ✨
+> 🎥 Watch **Fantasy Character Generator** in action! ✨
 
 > [!NOTE]
 > Fantasy Character Generator is a React-based fantasy character creation application deployed on Vercel. It generates champions across six fantasy classes, provides local portrait variants, creates procedural character backstories, and allows users to save and manage characters in a personal browser-based deck.
@@ -501,7 +501,7 @@ For the official learning objectives, instructions, and environment-specific req
 
 ## Future Enhancements
 
-The following ideas could be considered for future versions of Fantasy Character Generator:
+The following ideas could be considered for future versions of **Fantasy Character Generator**:
 
 - **Additional Character Classes:** Expand the application with more fantasy vocations and associated attributes.
 - **Expanded Portrait Collections:** Add more artwork variants for each existing class.
