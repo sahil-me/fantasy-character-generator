@@ -299,25 +299,20 @@ This section showcases the **Fantasy Character Generator** interface, character 
 
 The main workbench provides the character-generation controls, class filters, and generated champion card.
 
-
+<img width="1355" height="768" alt="Main Workbench" src="https://github.com/user-attachments/assets/0a54df00-d7a3-46e8-9917-49707416c1d4" />
 
 ### Generated Character
 
 The generated character view displays the champion's portrait, name, title, class, attributes, and origin chronicle.
 
-
-
-### Character Portraits and Attributes
-
-The portrait and attribute sections provide a visual representation of the generated champion.
-
-
+<img width="1351" height="768" alt="Generator Character" src="https://github.com/user-attachments/assets/a3c474e2-aca3-4b3c-b675-4134b202d01f" />
+<img width="1343" height="282" alt="Generator Character2" src="https://github.com/user-attachments/assets/9712963b-1dde-4f7a-98cb-89b4c0e18e43" />
 
 ### My Deck
 
 The personal deck displays saved champions and provides controls for searching, filtering, sorting, and inspecting saved characters.
 
-
+<img width="1353" height="768" alt="My Deck" src="https://github.com/user-attachments/assets/ecb348a0-e911-446a-9d16-3ed21dfe2aa6" />
 
 > [!NOTE]
 > The screenshot paths above are placeholders. Upload the corresponding screenshots to a `docs/screenshots/` directory in the repository, or replace these paths with the actual GitHub-hosted image URLs before publishing this section.
